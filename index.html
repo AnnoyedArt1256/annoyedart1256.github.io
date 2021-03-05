@@ -1,1 +1,94 @@
-this is a placeholder file
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+<style>
+body {font-family: 'Noto Sans JP', sans-serif;;}
+
+body { background-color: #202225; color: #eeeeee; }
+.tab {
+  overflow: hidden;
+  background-color: #36393f;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #eeeeee;
+  padding: 14px 16px;
+  transition: 0.25s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #4a494f;
+}
+
+.tab button.active {
+  background-color: #36393f;
+}
+
+.tabcontent {
+  animation: fadeEffect .5s; 
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+a {
+  color: #5f86b7;
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Links')">Social Media</button>
+</div>
+
+<div id="Home" class="tabcontent">
+ <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="AnnoyedArt1256s_website_0"></a>AnnoyedArt1256’s website</h1>
+<h4 class="code-line" data-line-start=1 data-line-end=2 ><a id="Hi_there_If_you_dont_know_who_I_am_I_am_a_11_year_old_boy_who_loves_to_make_scratch_projects_and_making_some_JavaScript_code_and_chatting_with_people_1"></a>Hi there! If you don’t know who I am, I am a 11 year old boy who loves to make scratch projects <s>(and making some JavaScript code)</s> and chatting with people!</h4>
+</div>
+
+<div id="Links" class="tabcontent">
+
+
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Social_Media_Links_0"></a>Social Media Links</h1>
+<h4 class="code-line" data-line-start=2 data-line-end=3 ><a id="Youtube_httpswwwyoutubecomchannelUC2JtlLImGxsmp4wqVNPd6Rw_2"></a>Youtube: <a href="https://www.youtube.com/channel/UC2JtlLImGxsmp4wqVNPd6Rw">https://www.youtube.com/channel/UC2JtlLImGxsmp4wqVNPd6Rw</a></h4>
+<h4 class="code-line" data-line-start=3 data-line-end=4 ><a id="Twitter_httpstwittercomAArt1256_3"></a>Twitter: <a href="https://twitter.com/AArt1256">https://twitter.com/AArt1256</a></h4>
+<h4 class="code-line" data-line-start=5 data-line-end=6 ><a id="Reddit_httpswwwredditcomuserAnnoyedArt1256_5"></a>Reddit: <a href="https://www.reddit.com/user/AnnoyedArt1256">https://www.reddit.com/user/AnnoyedArt1256</a></h4>
+<h4 class="code-line" data-line-start=6 data-line-end=7 ><a id="Github_httpsgithubcomAnnoyedArt1256_6"></a>Github: <a href="https://github.com/AnnoyedArt1256">https://github.com/AnnoyedArt1256</a></h4>
+<h4 class="code-line" data-line-start=7 data-line-end=8 ><a id="Battle_of_the_Bits_httpsbattleofthebitsorgbarracksProfileAArt1256_7"></a>Battle of the Bits: <a href="https://battleofthebits.org/barracks/Profile/AArt1256/">https://battleofthebits.org/barracks/Profile/AArt1256/</a></h4>
+<h4 class="code-line" data-line-start=4 data-line-end=5 ><a id="Discord_AArt12561256_4"></a>Discord Tag: <span style="color:#5f86b7"> AArt1256#1256</span></h4>
+<h2 class="code-line" data-line-start=10 data-line-end=11 ><a id="Join_my_Discord_Server_10"></a>Join my Discord Server!</h2>
+<h4 class="code-line" data-line-start=11 data-line-end=12 ><a id="httpsdiscordggUdEcTWnsGj_11"></a><a href="https://discord.gg/UdEcTWnsGj">https://discord.gg/UdEcTWnsGj</a></h4>
+<h4 class="code-line" data-line-start=13 data-line-end=14 ><a id="also_i_have_a_spinoff_server_where_you_can_try_out_and_share_a_drawing_program_i_made_in_discord_httpsdiscordggD5exUnK3Wx_13"></a>also i have a spinoff server where you can try out and share a drawing program i made in discord: <a href="https://discord.gg/D5exUnK3Wx">https://discord.gg/D5exUnK3Wx</a></h4>
+
+</div>
+
+<script>
+openCity(event, 'Home')
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
